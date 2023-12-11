@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+}
+.block{
+    min-height: 100vh;
+    width: 100%;
+    padding: 0.5%;
+    background-image:url(background.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    overflow-x: hidden;
+} 
+.container{
+    width: 90%;
+    max-width: 470px;
+    max-height: 560px;
+    color: #000000;
+    margin: 50px 100px auto 70px;
+    padding: 35px 35px;
+    text-align: center;
+    border-radius: 50px;
+    background: rgba(52, 146, 253, 0.829);
+}
+.searchbar{
+    width: 90%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.searchbar input{
+    height: 50px;
+    flex: 1;
+    margin-right: 16px;
+    font-size: 20px;
+    border: 0;
+    outline: 0;
+    background: #ffffff;
+    color: #000000;
+    padding: 10px 25px;
+    border-radius: 150px;
+}
+.searchbar button{
+    width: 90px;
+    height: 40px;
+    border: 0;
+    outline: 0;
+    background: #ffffff;
+    border-radius: 30px;
+    cursor: pointer;
+}  
+.searchbar button img{
+    width: 25px;
+}
+.sicon{
+    width: 170px;
+    margin-top: 30px;
+    border-radius: 100px;
+}
+.show h1{
+    font-size: 55px;
+    font-weight: 900;
+}
+.show h2{
+    font-size: 35px;
+    font-weight: 700;
+    margin-top: -2px;
+}
+
+.more{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    margin-top: 50px;
+}
+.cr{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.cr img{
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    border-radius: 40px;
+}
+
+.humid,.wind,.visi{
+    font-size: 20px;
+    font-weight: 800;
+    margin-top: -6px;
+}
+.show{
+    display: none;
+}
+.error{
+    text-align: center;
+    margin-left: 10px;
+    font-size: 20px;
+    margin-top: 20px;
+    display: none;
+}
+@media(max-width: 700px) {
+    .block{
+        overflow: hidden;
+        height: 100vh;
+        width: 100%;
+
+    }
+    .container{
+        margin: 45% auto;
+        padding: 20px 8px;
+    }
+    .searchbar input{
+        width: 50%;
+        height: 40px;
+        border-radius: 50px;
+        margin: auto 30px;
+        font-size: 15px;
+    }
+
+    .searchbar button{
+        width: 20%;
+        height: 40px;
+        border-radius: 20px;
+    }
+    .sicon{
+        width: 110px;
+        margin-top: 30px;
+    }
+    .show h1{
+        font-size: 35px;
+        font-weight: 900;
+    }
+    .show h2{
+        font-size: 25px;
+        font-weight: 700;
+        margin-top: -10px;
+    }
+}
